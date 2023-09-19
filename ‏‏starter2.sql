@@ -4,7 +4,7 @@
 SELECT DISTINCT c.contact_name,o.customer_id
 FROM customers AS c
 LEFT JOIN orders AS o ON c.customer_id = o.customer_id
--- WHERE o.customer_id IS NULL;
+WHERE o.customer_id IS NULL;
 
 -- שאלה 2
 SELECT c.contact_name,count(o.order_id) as count_of_orders
